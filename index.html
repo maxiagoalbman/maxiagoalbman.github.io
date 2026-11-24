@@ -58,28 +58,34 @@
 
         /* LISTA DE INTEGRANTES */
         .integrantes {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
         }
 
-        .integrante {
+        .integrantes ul {
+            list-style: none;
+        }
+
+        .integrantes li {
             display: flex;
             align-items: center;
             gap: 25px;
-            background: white;
-            padding: 15px 25px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f5f8fc;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
             transition: transform 0.3s;
         }
 
-        .integrante:hover {
+        .integrantes li:hover {
             transform: translateX(8px);
         }
 
         /* IMAGENES DEL MISMO TAMAÑO */
-        .integrante img {
+        .integrante img,
+        .integrantes li img {
             width: 110px;
             height: 110px;
             min-width: 110px;
@@ -89,7 +95,8 @@
         }
 
         /* NOMBRES */
-        .integrante h3 {
+        .integrante h3,
+        .integrantes li h3 {
             font-size: 19px;
             color: #123b5d;
         }
@@ -126,18 +133,18 @@
                 font-size: 23px;
             }
 
-            .integrante {
+            .integrantes li {
                 gap: 15px;
                 padding: 12px;
             }
 
-            .integrante img {
+            .integrantes li img {
                 width: 85px;
                 height: 85px;
                 min-width: 85px;
             }
 
-            .integrante h3 {
+            .integrantes li h3 {
                 font-size: 15px;
             }
         }
@@ -165,48 +172,52 @@
 
         <section class="integrantes">
 
-            <!-- INTEGRANTE 1 -->
-            <div class="integrante">
+            <ul>
 
-                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MARTINEZ%20OSORIO%20CARLOS%20ALBERTO.jpeg"
-                alt="Carlos Alberto Martinez Osorio">
+                <!-- INTEGRANTE 1 -->
+                <li>
 
-                <h3>Martinez Osorio Carlos Alberto</h3>
+                    <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MARTINEZ%20OSORIO%20CARLOS%20ALBERTO.jpeg"
+                    alt="Carlos Alberto Martinez Osorio">
 
-            </div>
+                    <h3>Martinez Osorio Carlos Alberto</h3>
 
-
-            <!-- INTEGRANTE 2 -->
-            <div class="integrante">
-
-                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/ALANIS%20LEON%20CRISTHIAN%20MAXIMILIANO.jpeg"
-                alt="Cristhian Maximiliano Alanis Leon">
-
-                <h3>Alanis Leon Cristhian Maximiliano</h3>
-
-            </div>
+                </li>
 
 
-            <!-- INTEGRANTE 3 -->
-            <div class="integrante">
+                <!-- INTEGRANTE 2 -->
+                <li>
 
-                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/COELLO%20OZUNA%20VICTOR%20SANTIAGO.jpeg"
-                alt="Victor Santiago Coello Ozuna">
+                    <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/ALANIS%20LEON%20CRISTHIAN%20MAXIMILIANO.jpeg"
+                    alt="Cristhian Maximiliano Alanis Leon">
 
-                <h3>Coello Ozuna Victor Santiago</h3>
+                    <h3>Alanis Leon Cristhian Maximiliano</h3>
 
-            </div>
+                </li>
 
 
-            <!-- INTEGRANTE 4 -->
-            <div class="integrante">
+                <!-- INTEGRANTE 3 -->
+                <li>
 
-                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MENA%20RODRIGUEZ%20ANGEL%20MANUEL.jpeg"
-                alt="Angel Manuel Mena Rodriguez">
+                    <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/COELLO%20OZUNA%20VICTOR%20SANTIAGO.jpeg"
+                    alt="Victor Santiago Coello Ozuna">
 
-                <h3>Mena Rodriguez Angel Manuel</h3>
+                    <h3>Coello Ozuna Victor Santiago</h3>
 
-            </div>
+                </li>
+
+
+                <!-- INTEGRANTE 4 -->
+                <li>
+
+                    <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MENA%20RODRIGUEZ%20ANGEL%20MANUEL.jpeg"
+                    alt="Angel Manuel Mena Rodriguez">
+
+                    <h3>Mena Rodriguez Angel Manuel</h3>
+
+                </li>
+
+            </ul>
 
         </section>
 
