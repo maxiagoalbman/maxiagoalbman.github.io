@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD TALLER DE INFORMATICA</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf0f6;
+            color: #222;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: linear-gradient(135deg, #102a43, #1769aa);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+            border-bottom: 5px solid #f1c40f;
+        }
+
+        header h1 {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* CUERPO */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        main h2 {
+            text-align: center;
+            color: #123b5d;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        .integrantes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .integrante {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transition: transform 0.3s;
+        }
+
+        .integrante:hover {
+            transform: translateY(-8px);
+        }
+
+        .integrante img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #1769aa;
+            margin-bottom: 15px;
+        }
+
+        .integrante h3 {
+            font-size: 17px;
+            color: #123b5d;
+        }
+
+        /* PIE DE PAGINA */
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            border-top: 5px solid #f1c40f;
+        }
+
+        footer h2 {
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        footer .final {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #bdc9d6;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>ACTIVIDAD TALLER DE INFORMATICA</h1>
+        <p>Proyecto escolar - Taller de Informática</p>
+    </header>
+
+    <!-- CUERPO -->
+    <main>
+        <h2>INTEGRANTES DEL EQUIPO</h2>
+
+        <section class="integrantes">
+
+            <div class="integrante">
+                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MARTINEZ%20OSORIO%20CARLOS%20ALBERTO.jpeg"
+                     alt="Carlos Alberto Martinez Osorio">
+                <h3>Martinez Osorio Carlos Alberto</h3>
+            </div>
+
+            <div class="integrante">
+                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/ALANIS%20LEON%20CRISTHIAN%20MAXIMILIANO.jpeg"
+                     alt="Cristhian Maximiliano Alanis Leon">
+                <h3>Alanis Leon Cristhian Maximiliano</h3>
+            </div>
+
+            <div class="integrante">
+                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/COELLO%20OZUNA%20VICTOR%20SANTIAGO.jpeg"
+                     alt="Victor Santiago Coello Ozuna">
+                <h3>Coello Ozuna Victor Santiago</h3>
+            </div>
+
+            <div class="integrante">
+                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MENA%20RODRIGUEZ%20ANGEL%20MANUEL.jpeg"
+                     alt="Angel Manuel Mena Rodriguez">
+                <h3>Mena Rodriguez Angel Manuel</h3>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <h2>INFORMACIÓN DE CONTACTO</h2>
+
+        <p>📍 Ubicación: CP 67067</p>
+
+        <p>🏢 Dirección: Avenida Industrial Ejido Bonfil
+        Regio 514 conectado a la Region 228</p>
+
+        <p>📞 Número de teléfono: 7867906718</p>
+
+        <p class="final">
+            © 2026 - Actividad Taller de Informática
+        </p>
+    </footer>
+
+</body>
+</html>
