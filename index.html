@@ -42,6 +42,32 @@
             font-size: 16px;
         }
 
+        /* MENU DE NAVEGACION */
+        nav {
+            background: #123b5d;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
         /* CUERPO */
         main {
             max-width: 850px;
@@ -54,6 +80,20 @@
             color: #123b5d;
             margin-bottom: 30px;
             font-size: 26px;
+        }
+
+        /* SECCIONES */
+        .seccion {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .seccion p {
+            line-height: 1.7;
+            text-align: center;
         }
 
         /* TABLA DE INTEGRANTES */
@@ -143,6 +183,15 @@
                 font-size: 23px;
             }
 
+            nav ul {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+
             th {
                 font-size: 15px;
                 padding: 12px;
@@ -177,76 +226,121 @@
 
     </header>
 
+    <!-- MENU DE NAVEGACION -->
+    <nav>
+
+        <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+
+            <li><a href="#servicios">Servicios</a></li>
+
+            <li><a href="#equipo">Equipo</a></li>
+        </ul>
+
+    </nav>
+
     <!-- CUERPO -->
     <main>
 
-        <h2>INTEGRANTES DEL EQUIPO</h2>
+        <!-- SECCION NOSOTROS -->
+        <section class="seccion" id="nosotros">
 
-        <section class="integrantes">
+            <h2>NOSOTROS</h2>
 
-            <!-- TABLA DE INTEGRANTES -->
-            <table>
+            <p>
+                Somos un equipo de estudiantes que realiza
+                actividades y proyectos relacionados con el
+                taller de informática, desarrollando nuestros
+                conocimientos y habilidades tecnológicas.
+            </p>
 
-                <thead>
-                    <tr>
-                        <th>FOTOGRAFÍA</th>
-                        <th>NOMBRE DEL INTEGRANTE</th>
-                    </tr>
-                </thead>
+        </section>
 
-                <tbody>
+        <!-- SECCION SERVICIOS -->
+        <section class="seccion" id="servicios">
 
-                    <!-- INTEGRANTE 1 -->
-                    <tr>
-                        <td>
-                            <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MARTINEZ%20OSORIO%20CARLOS%20ALBERTO.jpeg"
-                            alt="Carlos Alberto Martinez Osorio">
-                        </td>
+            <h2>SERVICIOS</h2>
 
-                        <td class="nombre">
-                            Martinez Osorio Carlos Alberto
-                        </td>
-                    </tr>
+            <p>
+                Ofrecemos proyectos escolares de informática,
+                desarrollo de páginas web, diseño digital y
+                actividades relacionadas con la tecnología.
+            </p>
 
-                    <!-- INTEGRANTE 2 -->
-                    <tr>
-                        <td>
-                            <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/ALANIS%20LEON%20CRISTHIAN%20MAXIMILIANO.jpeg"
-                            alt="Cristhian Maximiliano Alanis Leon">
-                        </td>
+        </section>
 
-                        <td class="nombre">
-                            Alanis Leon Cristhian Maximiliano
-                        </td>
-                    </tr>
+        <!-- SECCION EQUIPO -->
+        <section id="equipo">
 
-                    <!-- INTEGRANTE 3 -->
-                    <tr>
-                        <td>
-                            <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/COELLO%20OZUNA%20VICTOR%20SANTIAGO.jpeg"
-                            alt="Victor Santiago Coello Ozuna">
-                        </td>
+            <h2>INTEGRANTES DEL EQUIPO</h2>
 
-                        <td class="nombre">
-                            Coello Ozuna Victor Santiago
-                        </td>
-                    </tr>
+            <div class="integrantes">
 
-                    <!-- INTEGRANTE 4 -->
-                    <tr>
-                        <td>
-                            <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MENA%20RODRIGUEZ%20ANGEL%20MANUEL.jpeg"
-                            alt="Angel Manuel Mena Rodriguez">
-                        </td>
+                <!-- TABLA DE INTEGRANTES -->
+                <table>
 
-                        <td class="nombre">
-                            Mena Rodriguez Angel Manuel
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>FOTOGRAFÍA</th>
+                            <th>NOMBRE DEL INTEGRANTE</th>
+                        </tr>
+                    </thead>
 
-                </tbody>
+                    <tbody>
 
-            </table>
+                        <!-- INTEGRANTE 1 -->
+                        <tr>
+                            <td>
+                                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MARTINEZ%20OSORIO%20CARLOS%20ALBERTO.jpeg"
+                                alt="Carlos Alberto Martinez Osorio">
+                            </td>
+
+                            <td class="nombre">
+                                Martinez Osorio Carlos Alberto
+                            </td>
+                        </tr>
+
+                        <!-- INTEGRANTE 2 -->
+                        <tr>
+                            <td>
+                                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/ALANIS%20LEON%20CRISTHIAN%20MAXIMILIANO.jpeg"
+                                alt="Cristhian Maximiliano Alanis Leon">
+                            </td>
+
+                            <td class="nombre">
+                                Alanis Leon Cristhian Maximiliano
+                            </td>
+                        </tr>
+
+                        <!-- INTEGRANTE 3 -->
+                        <tr>
+                            <td>
+                                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/COELLO%20OZUNA%20VICTOR%20SANTIAGO.jpeg"
+                                alt="Victor Santiago Coello Ozuna">
+                            </td>
+
+                            <td class="nombre">
+                                Coello Ozuna Victor Santiago
+                            </td>
+                        </tr>
+
+                        <!-- INTEGRANTE 4 -->
+                        <tr>
+                            <td>
+                                <img src="https://raw.githubusercontent.com/maxiagoalbman/maxiagoalbman.github.io/refs/heads/main/FOTOS%20GIFTHUB/MENA%20RODRIGUEZ%20ANGEL%20MANUEL.jpeg"
+                                alt="Angel Manuel Mena Rodriguez">
+                            </td>
+
+                            <td class="nombre">
+                                Mena Rodriguez Angel Manuel
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </section>
 
