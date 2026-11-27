@@ -1,1 +1,284 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad Integral | Despacho Contable</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #102b46;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #d4af37;
+        }
+
+        nav {
+            background-color: #183d5d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .banner {
+            background: linear-gradient(
+                rgba(16,43,70,.85),
+                rgba(16,43,70,.85)
+            );
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 45px 10%;
+        }
+
+        section h2 {
+            color: #102b46;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 3px 10px #0002;
+            text-align: center;
+        }
+
+        .tarjeta h3 {
+            color: #183d5d;
+            margin-bottom: 12px;
+        }
+
+        .nosotros {
+            background-color: white;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .contacto {
+            background-color: #102b46;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contacto h2 {
+            color: #d4af37;
+        }
+
+        footer {
+            background-color: #081c30;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .banner h2 {
+                font-size: 27px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CONTABILIDAD INTEGRAL</h1>
+        <p>Soluciones financieras y asesoría empresarial</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="banner" id="inicio">
+        <h2>Tu tranquilidad financiera es nuestra prioridad</h2>
+        <p>Más de 10 años brindando confianza y soluciones contables.</p>
+    </div>
+
+    <section class="nosotros" id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+
+        <p>
+            Contabilidad Integral S.A. de C.V. es un despacho contable
+            ficticio fundado en 2015 en Cancún, Quintana Roo.
+            Nos especializamos en ofrecer servicios contables,
+            fiscales y administrativos a personas físicas y empresas.
+            Nuestro compromiso es brindar atención profesional,
+            confianza y soluciones que ayuden al crecimiento
+            financiero de nuestros clientes.
+        </p>
+
+        <br>
+
+        <h3>Misión</h3>
+        <p>
+            Ofrecer servicios contables de calidad mediante
+            soluciones eficientes, honestas y profesionales.
+        </p>
+
+        <br>
+
+        <h3>Visión</h3>
+        <p>
+            Ser uno de los despachos contables más reconocidos
+            de Quintana Roo por nuestra responsabilidad y excelencia.
+        </p>
+
+        <br>
+
+        <h3>Valores</h3>
+        <p>
+            Responsabilidad, honestidad, compromiso,
+            confidencialidad y profesionalismo.
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <h3>📊 Contabilidad General</h3>
+                <p>
+                    Registro de operaciones financieras,
+                    elaboración de estados financieros
+                    y control de ingresos y egresos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>📑 Asesoría Fiscal</h3>
+                <p>
+                    Orientación fiscal, cálculo de impuestos
+                    y apoyo en el cumplimiento de obligaciones
+                    tributarias.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>💼 Nómina</h3>
+                <p>
+                    Elaboración de nóminas, cálculo de salarios,
+                    prestaciones y recibos de pago.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🏢 Consultoría Empresarial</h3>
+                <p>
+                    Asesoramiento administrativo y financiero
+                    para mejorar la organización de las empresas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="equipo">
+        <h2>Nuestro Equipo de Trabajo</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <h3>Lic. Carlos Méndez</h3>
+                <p>Director General</p>
+                <p>Especialista en administración financiera.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>C.P. Mariana López</h3>
+                <p>Contadora General</p>
+                <p>Especialista en contabilidad y auditoría.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Lic. Roberto Sánchez</h3>
+                <p>Asesor Fiscal</p>
+                <p>Especialista en obligaciones fiscales.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+
+        <p><strong>Empresa:</strong> Contabilidad Integral S.A. de C.V.</p>
+        <p><strong>Dirección:</strong> Avenida Tulum #125, Cancún, Quintana Roo.</p>
+        <p><strong>Teléfono:</strong> 998 123 4567</p>
+        <p><strong>Correo:</strong> contacto@contabilidadintegral.com</p>
+        <p><strong>Horario:</strong> Lunes a viernes, 9:00 a.m. - 6:00 p.m.</p>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Contabilidad Integral S.A. de C.V.
+            | Todos los derechos reservados.
+        </p>
+        <p>Información ficticia con fines educativos.</p>
+    </footer>
+
+</body>
+</html>
+
