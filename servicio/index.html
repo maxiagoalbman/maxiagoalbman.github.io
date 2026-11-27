@@ -1,1 +1,346 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Contabilidad Integral</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #102b46;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            color: #d4af37;
+            font-size: 32px;
+        }
+
+        nav {
+            background: #183d5d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .banner {
+            background: #244b6b;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .banner h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        h2 {
+            color: #102b46;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px #0002;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-7px);
+        }
+
+        .tarjeta h3 {
+            color: #183d5d;
+            margin: 15px 0;
+        }
+
+        .icono {
+            font-size: 42px;
+        }
+
+        .beneficios {
+            background: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .beneficios ul {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .paquetes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .paquete {
+            background: white;
+            padding: 30px;
+            width: 270px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        .paquete h3 {
+            color: #183d5d;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            font-size: 25px;
+            color: #b18b21;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        button {
+            background: #102b46;
+            color: white;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #d4af37;
+            color: #102b46;
+        }
+
+        .contacto {
+            background: #102b46;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contacto h2 {
+            color: #d4af37;
+        }
+
+        footer {
+            background: #081c30;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CONTABILIDAD INTEGRAL</h1>
+        <p>Soluciones financieras y asesoría empresarial</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones contables diseñadas para el crecimiento de tu negocio.</p>
+    </div>
+
+    <section id="servicios">
+
+        <h2>Servicios que ofrecemos</h2>
+
+        <div class="servicios">
+
+            <div class="tarjeta">
+                <div class="icono">📊</div>
+                <h3>Contabilidad General</h3>
+                <p>
+                    Registro y control de operaciones financieras,
+                    elaboración de balances, estados financieros
+                    y reportes contables.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">📑</div>
+                <h3>Declaraciones Fiscales</h3>
+                <p>
+                    Preparación y presentación de declaraciones
+                    mensuales y anuales, así como seguimiento
+                    de obligaciones fiscales.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">💼</div>
+                <h3>Administración de Nómina</h3>
+                <p>
+                    Cálculo de salarios, prestaciones,
+                    retenciones y elaboración de recibos
+                    de nómina para empleados.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🏢</div>
+                <h3>Asesoría Empresarial</h3>
+                <p>
+                    Orientación para emprendedores y empresas
+                    en temas administrativos, financieros
+                    y organización de recursos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">📁</div>
+                <h3>Auditoría Contable</h3>
+                <p>
+                    Revisión de registros contables,
+                    análisis de documentación y evaluación
+                    de información financiera.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🧾</div>
+                <h3>Facturación Electrónica</h3>
+                <p>
+                    Apoyo en elaboración, revisión y control
+                    de comprobantes fiscales digitales
+                    por Internet (CFDI).
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="beneficios" id="beneficios">
+
+        <h2>¿Por qué elegirnos?</h2>
+
+        <ul>
+            <li>✔ Atención personalizada.</li>
+            <li>✔ Profesionales capacitados.</li>
+            <li>✔ Confidencialidad de la información.</li>
+            <li>✔ Organización financiera.</li>
+            <li>✔ Asesoría continua.</li>
+            <li>✔ Compromiso con nuestros clientes.</li>
+        </ul>
+
+    </section>
+
+    <section id="paquetes">
+
+        <h2>Paquetes de Servicios</h2>
+
+        <div class="paquetes">
+
+            <div class="paquete">
+                <h3>Paquete Básico</h3>
+                <p class="precio">$1,200 MXN</p>
+                <p>Contabilidad general.</p>
+                <p>Registro de ingresos y gastos.</p>
+                <p>Reporte mensual.</p>
+                <button onclick="contactar()">Solicitar información</button>
+            </div>
+
+            <div class="paquete">
+                <h3>Paquete Empresarial</h3>
+                <p class="precio">$2,500 MXN</p>
+                <p>Contabilidad general.</p>
+                <p>Declaraciones fiscales.</p>
+                <p>Asesoría empresarial.</p>
+                <button onclick="contactar()">Solicitar información</button>
+            </div>
+
+            <div class="paquete">
+                <h3>Paquete Integral</h3>
+                <p class="precio">$4,000 MXN</p>
+                <p>Servicios contables completos.</p>
+                <p>Administración de nómina.</p>
+                <p>Asesoría fiscal personalizada.</p>
+                <button onclick="contactar()">Solicitar información</button>
+            </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top:20px;">
+            Precios mensuales ficticios con fines ilustrativos.
+        </p>
+
+    </section>
+
+    <section class="contacto" id="contacto">
+
+        <h2>Solicita nuestros servicios</h2>
+
+        <p>Estamos listos para ayudarte a administrar mejor tus finanzas.</p>
+        <p><strong>Teléfono:</strong> 998 123 4567</p>
+        <p><strong>Correo:</strong> contacto@contabilidadintegral.com</p>
+        <p><strong>Ubicación:</strong> Cancún, Quintana Roo.</p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Contabilidad Integral S.A. de C.V.</p>
+        <p>Información ficticia con fines educativos.</p>
+    </footer>
+
+    <script>
+        function contactar() {
+            alert("¡Gracias por tu interés! Comunícate con nosotros al 998 123 4567 para solicitar información.");
+        }
+    </script>
+
+</body>
+</html>
+
