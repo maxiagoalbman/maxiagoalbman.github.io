@@ -60,6 +60,26 @@
             margin-bottom: 15px;
         }
 
+        /* BOTÓN VOLVER AL INICIO */
+
+        .btn-inicio {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #d4af37;
+            color: #102b46;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-inicio:hover {
+            background-color: white;
+            color: #102b46;
+            transform: scale(1.05);
+        }
+
         section {
             padding: 45px 8%;
         }
@@ -72,7 +92,10 @@
 
         .servicios {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(240px, 1fr)
+            );
             gap: 25px;
         }
 
@@ -170,15 +193,34 @@
             text-align: center;
         }
 
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .banner h2 {
+                font-size: 27px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
+
     <header>
         <h1>CONTABILIDAD INTEGRAL</h1>
         <p>Soluciones financieras y asesoría empresarial</p>
     </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
 
     <nav>
         <a href="index.html">Inicio</a>
@@ -188,10 +230,24 @@
         <a href="#contacto">Contacto</a>
     </nav>
 
+    <!-- BANNER PRINCIPAL -->
+
     <div class="banner">
+
         <h2>Nuestros Servicios</h2>
-        <p>Soluciones contables diseñadas para el crecimiento de tu negocio.</p>
+
+        <p>
+            Soluciones contables diseñadas para
+            el crecimiento de tu negocio.
+        </p>
+
+        <a href="index.html" class="btn-inicio">
+            ← Volver al inicio
+        </a>
+
     </div>
+
+    <!-- SECCIÓN DE SERVICIOS -->
 
     <section id="servicios">
 
@@ -263,6 +319,8 @@
 
     </section>
 
+    <!-- SECCIÓN DE BENEFICIOS -->
+
     <section class="beneficios" id="beneficios">
 
         <h2>¿Por qué elegirnos?</h2>
@@ -278,6 +336,8 @@
 
     </section>
 
+    <!-- SECCIÓN DE PAQUETES -->
+
     <section id="paquetes">
 
         <h2>Paquetes de Servicios</h2>
@@ -285,30 +345,51 @@
         <div class="paquetes">
 
             <div class="paquete">
+
                 <h3>Paquete Básico</h3>
+
                 <p class="precio">$1,200 MXN</p>
+
                 <p>Contabilidad general.</p>
                 <p>Registro de ingresos y gastos.</p>
                 <p>Reporte mensual.</p>
-                <button onclick="contactar()">Solicitar información</button>
+
+                <button onclick="contactar()">
+                    Solicitar información
+                </button>
+
             </div>
 
             <div class="paquete">
+
                 <h3>Paquete Empresarial</h3>
+
                 <p class="precio">$2,500 MXN</p>
+
                 <p>Contabilidad general.</p>
                 <p>Declaraciones fiscales.</p>
                 <p>Asesoría empresarial.</p>
-                <button onclick="contactar()">Solicitar información</button>
+
+                <button onclick="contactar()">
+                    Solicitar información
+                </button>
+
             </div>
 
             <div class="paquete">
+
                 <h3>Paquete Integral</h3>
+
                 <p class="precio">$4,000 MXN</p>
+
                 <p>Servicios contables completos.</p>
                 <p>Administración de nómina.</p>
                 <p>Asesoría fiscal personalizada.</p>
-                <button onclick="contactar()">Solicitar información</button>
+
+                <button onclick="contactar()">
+                    Solicitar información
+                </button>
+
             </div>
 
         </div>
@@ -319,28 +400,62 @@
 
     </section>
 
+    <!-- SECCIÓN DE CONTACTO -->
+
     <section class="contacto" id="contacto">
 
         <h2>Solicita nuestros servicios</h2>
 
-        <p>Estamos listos para ayudarte a administrar mejor tus finanzas.</p>
-        <p><strong>Teléfono:</strong> 998 123 4567</p>
-        <p><strong>Correo:</strong> contacto@contabilidadintegral.com</p>
-        <p><strong>Ubicación:</strong> Cancún, Quintana Roo.</p>
+        <p>
+            Estamos listos para ayudarte a administrar
+            mejor tus finanzas.
+        </p>
+
+        <p>
+            <strong>Teléfono:</strong> 998 123 4567
+        </p>
+
+        <p>
+            <strong>Correo:</strong>
+            contacto@contabilidadintegral.com
+        </p>
+
+        <p>
+            <strong>Ubicación:</strong>
+            Cancún, Quintana Roo.
+        </p>
 
     </section>
 
+    <!-- PIE DE PÁGINA -->
+
     <footer>
-        <p>© 2026 Contabilidad Integral S.A. de C.V.</p>
-        <p>Información ficticia con fines educativos.</p>
+
+        <p>
+            © 2026 Contabilidad Integral S.A. de C.V.
+        </p>
+
+        <p>
+            Información ficticia con fines educativos.
+        </p>
+
     </footer>
 
+    <!-- JAVASCRIPT -->
+
     <script>
+
         function contactar() {
-            alert("¡Gracias por tu interés! Comunícate con nosotros al 998 123 4567 para solicitar información.");
+
+            alert(
+                "¡Gracias por tu interés! " +
+                "Comunícate con nosotros al 998 123 4567 " +
+                "para solicitar información."
+            );
+
         }
+
     </script>
 
 </body>
 </html>
-
